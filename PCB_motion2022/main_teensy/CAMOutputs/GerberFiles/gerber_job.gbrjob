@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-05-02T20:09:11Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "pcb_teensy"
+        },
+        "Owner": "S guayacan <S.guayacan@uniandes.edu.co>",
+        "Size": {
+            "X": 200,
+            "Y": 180
+        }
+    }
+}
