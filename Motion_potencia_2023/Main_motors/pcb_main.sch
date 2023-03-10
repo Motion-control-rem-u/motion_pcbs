@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3653,10 +3653,10 @@ Wickmann</description>
 <part name="VENT2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="12V_IN" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="U$1" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
-<part name="U$2" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
-<part name="U$3" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
-<part name="U$4" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
+<part name="M1" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
+<part name="M2" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
+<part name="M3" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
+<part name="M4" library="Robocol_Eagle_Libraries2" deviceset="GX16_2_PINS" device=""/>
 <part name="FUSEMD1" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="FUSE" device="BLANK_5X20MM" package3d_urn="urn:adsk.eagle:package:14079/1"/>
 <part name="FUSEMD2" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="FUSE" device="BLANK_5X20MM" package3d_urn="urn:adsk.eagle:package:14079/1"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
@@ -3761,10 +3761,10 @@ Wickmann</description>
 <attribute name="NAME" x="233.47" y="53.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.47" y="42.64" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="209.55" y="102.87" smashed="yes" rot="MR0"/>
-<instance part="U$2" gate="G$1" x="237.49" y="102.87" smashed="yes" rot="MR0"/>
-<instance part="U$3" gate="G$1" x="209.55" y="160.02" smashed="yes" rot="MR0"/>
-<instance part="U$4" gate="G$1" x="237.49" y="160.02" smashed="yes" rot="MR0"/>
+<instance part="M1" gate="G$1" x="209.55" y="102.87" smashed="yes" rot="MR0"/>
+<instance part="M2" gate="G$1" x="237.49" y="102.87" smashed="yes" rot="MR0"/>
+<instance part="M3" gate="G$1" x="209.55" y="160.02" smashed="yes" rot="MR0"/>
+<instance part="M4" gate="G$1" x="237.49" y="160.02" smashed="yes" rot="MR0"/>
 <instance part="FUSEMD1" gate="G$1" x="67.7418" y="19.1516" smashed="yes">
 <attribute name="NAME" x="63.9318" y="20.5486" size="1.778" layer="95"/>
 </instance>
@@ -3803,7 +3803,8 @@ Wickmann</description>
 <segment>
 <pinref part="24V_MD" gate="-2" pin="S"/>
 <wire x1="204.26" y1="52.8" x2="209.34" y2="52.8" width="0.1524" layer="91"/>
-<label x="201.72" y="50.26" size="1.778" layer="95"/>
+<label x="206.8" y="50.26" size="1.778" layer="95"/>
+<label x="205.74" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="FUSEMD1" gate="G$1" pin="1"/>
@@ -4157,7 +4158,8 @@ Wickmann</description>
 <segment>
 <pinref part="5_MD" gate="-2" pin="S"/>
 <wire x1="209.34" y1="40.1" x2="204.26" y2="40.1" width="0.1524" layer="91"/>
-<label x="199.18" y="37.56" size="1.778" layer="95"/>
+<label x="206.8" y="37.56" size="1.778" layer="95"/>
+<label x="205.74" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
@@ -4218,7 +4220,7 @@ Wickmann</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="3"/>
+<pinref part="M1" gate="G$1" pin="3"/>
 <wire x1="198.12" y1="99.06" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="MOUT1" gate="-1" pin="S"/>
 <wire x1="198.12" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
@@ -4227,14 +4229,14 @@ Wickmann</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="MOUT2" gate="-1" pin="S"/>
-<pinref part="U$2" gate="G$1" pin="3"/>
+<pinref part="M2" gate="G$1" pin="3"/>
 <wire x1="231.14" y1="91.44" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="91.44" x2="226.06" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="M2" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="106.68" x2="224.79" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="106.68" x2="224.79" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="MOUT2" gate="-2" pin="S"/>
@@ -4243,7 +4245,7 @@ Wickmann</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
+<pinref part="M1" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="106.68" x2="196.85" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="MOUT1" gate="-2" pin="S"/>
 <wire x1="196.85" y1="105.41" x2="196.85" y2="86.36" width="0.1524" layer="91"/>
@@ -4254,7 +4256,7 @@ Wickmann</description>
 <segment>
 <pinref part="MOUT4" gate="-1" pin="S"/>
 <wire x1="231.14" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="M4" gate="G$1" pin="3"/>
 <wire x1="226.06" y1="149.86" x2="226.06" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4263,7 +4265,7 @@ Wickmann</description>
 <pinref part="MOUT4" gate="-2" pin="S"/>
 <wire x1="231.14" y1="144.78" x2="224.79" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="144.78" x2="224.79" y2="163.83" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="M4" gate="G$1" pin="1"/>
 <wire x1="224.79" y1="163.83" x2="226.06" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4271,13 +4273,13 @@ Wickmann</description>
 <segment>
 <pinref part="MOUT3" gate="-1" pin="S"/>
 <wire x1="203.2" y1="148.59" x2="198.12" y2="148.59" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="3"/>
+<pinref part="M3" gate="G$1" pin="3"/>
 <wire x1="198.12" y1="148.59" x2="198.12" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
+<pinref part="M3" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="163.83" x2="196.85" y2="163.83" width="0.1524" layer="91"/>
 <pinref part="MOUT3" gate="-2" pin="S"/>
 <wire x1="196.85" y1="163.83" x2="196.85" y2="143.51" width="0.1524" layer="91"/>
