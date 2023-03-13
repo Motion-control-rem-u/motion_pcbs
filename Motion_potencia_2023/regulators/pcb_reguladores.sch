@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -1189,7 +1189,7 @@ Sebastian Guayacan</text>
 <instance part="GND4" gate="1" x="159.843" y="56.0484" smashed="yes">
 <attribute name="VALUE" x="157.303" y="53.5084" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="168.9108" y="98.8474" smashed="yes"/>
+<instance part="X1" gate="-1" x="113.0308" y="109.0074" smashed="yes"/>
 <instance part="X1" gate="-2" x="168.9108" y="93.7674" smashed="yes"/>
 <instance part="GND5" gate="1" x="165.8628" y="96.3074" smashed="yes">
 <attribute name="VALUE" x="163.3228" y="93.7674" size="1.778" layer="96"/>
@@ -1283,7 +1283,7 @@ Sebastian Guayacan</text>
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="166.3708" y1="98.8474" x2="165.8628" y2="98.8474" width="0.1524" layer="91"/>
+<wire x1="110.4908" y1="109.0074" x2="165.8628" y2="98.8474" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="156.972" y1="133.858" x2="156.8196" y2="133.858" width="0.1524" layer="91"/>
